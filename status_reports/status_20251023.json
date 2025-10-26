@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2025-10-23T17:33:05.202897",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 1100.0,
+    "spread": 1.2,
+    "volatility": 0.0002,
+    "last_signal": "BUY",
+    "uptime_hours": 24.5,
+    "error_count": 2,
+    "warning_count": 5,
+    "transactions_hour": 50,
+    "profitability": 120.0,
+    "recommendations": [
+      "Sistema funcionando correctamente"
+    ]
+  },
+  {
+    "timestamp": "2025-10-23T17:33:16.812063",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9743.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 3.8844444444444444e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19387.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19387.6% vs 70.0%)"
+    ]
+  }
+]

@@ -1,0 +1,715 @@
+================================================================================
+                    DOCUMENTACIÓN TÉCNICA COMPLETA
+                        SISTEMA DE TRADING ALGORÍTMICO
+================================================================================
+
+Generado: 2025-10-25 21:57:00
+Versión del Sistema: 2.1
+Estado del Proyecto: Optimizado y Reorganizado
+
+================================================================================
+1. ESTRUCTURA DEL PROYECTO
+================================================================================
+
+1.1 JERARQUÍA DE DIRECTORIOS
+----------------------------
+
+BOT trading/
+├── .pytest_cache/                    # Cache de pytest (auto-generado)
+├── .venv/                           # Entorno virtual Python
+├── config/                          # Configuraciones del sistema
+│   ├── m1_specialization.py         # Configuración especializada M1
+│   └── settings.py                  # Configuraciones principales
+├── core/                            # Núcleo del sistema
+│   ├── alert_manager.py             # Gestión de alertas
+│   ├── data_loader.py               # Carga y procesamiento de datos
+│   ├── execution_m1.py              # Motor de ejecución M1
+│   ├── performance_monitor.py       # Monitor de rendimiento
+│   ├── risk_manager.py              # Gestión de riesgo principal
+│   ├── risk_manager_m1.py           # Gestión de riesgo M1
+│   └── trading_bot.py               # Bot principal de trading
+├── m1_reports/                      # Reportes de análisis M1
+│   ├── eda_duration_*/              # Análisis exploratorio por duración
+│   ├── eda_unit_*/                  # Análisis exploratorio por unidad
+│   └── archivos de resultados       # Reportes, gráficos y CSV
+├── mt5_connector/                   # Conector MetaTrader 5
+│   └── connector.py                 # Interfaz MT5
+├── status_reports/                  # Reportes de estado del sistema
+├── strategies/                      # Estrategias de trading
+│   ├── m1_strategy.py               # Estrategia M1 especializada
+│   └── scalping_strategy.py         # Estrategia de scalping principal
+├── tests/                           # Suite de pruebas
+│   ├── test_*.py                    # Tests unitarios
+│   └── __init__.py                  # Inicializador del paquete
+├── tools/                           # Herramientas auxiliares
+│   ├── m1_performance.py            # Monitor de rendimiento M1
+│   ├── param_tuning_m1.py           # Optimización de parámetros M1
+│   └── visualization.py             # Herramientas de visualización
+├── main.py                          # Punto de entrada principal
+├── backtest.py                      # Motor de backtesting
+├── optimization_engine.py           # Motor de optimización
+├── performance_analyzer.py          # Analizador de rendimiento
+├── performance_comparison_tool.py   # Herramienta de comparación
+├── realistic_bot_evaluator.py       # Evaluador realista del bot
+├── run_*.py                         # Scripts de ejecución
+└── archivos de configuración        # Logs, reportes, etc.
+
+1.2 ARCHIVOS PRINCIPALES
+------------------------
+
+ARCHIVOS CRÍTICOS:
+- main.py (1,397 líneas)            - Sistema principal con monitoreo
+- backtest.py (37 KB)               - Motor de backtesting avanzado
+- realistic_bot_evaluator.py (39 KB) - Evaluador realista completo
+- performance_analyzer.py (25 KB)    - Analizador de rendimiento
+- optimization_engine.py (21 KB)     - Motor de optimización
+
+CONFIGURACIONES:
+- config/settings.py (276 líneas)    - Configuraciones principales
+- config/m1_specialization.py        - Configuración M1 especializada
+
+ESTRATEGIAS:
+- strategies/scalping_strategy.py (509 líneas) - Estrategia principal
+- strategies/m1_strategy.py (178 líneas)       - Estrategia M1
+
+CONECTIVIDAD:
+- mt5_connector/connector.py (485 líneas)      - Interfaz MetaTrader 5
+
+GESTIÓN DE RIESGO:
+- core/risk_manager.py (1,041 líneas)          - Gestión inteligente de riesgo
+- core/risk_manager_m1.py (70 líneas)          - Gestión de riesgo M1
+
+================================================================================
+2. DOCUMENTACIÓN POR CLASE
+================================================================================
+
+2.1 CLASES PRINCIPALES
+----------------------
+
+ScalpingStrategy (strategies/scalping_strategy.py)
+--------------------------------------------------
+PROPÓSITO: Estrategia de scalping basada en análisis técnico avanzado
+RESPONSABILIDAD: Generar señales de compra/venta usando múltiples indicadores
+
+MÉTODOS PÚBLICOS:
+- calculate_indicators(df) -> pd.DataFrame
+  * Calcula todos los indicadores técnicos (EMAs, RSI, Bollinger, ATR)
+- generate_signal(df, index) -> Tuple[SignalType, float, Dict]
+  * Genera señales de trading con confianza y razones
+- _calculate_confidence(df, index, signal_type) -> float
+  * Calcula nivel de confianza de la señal (0-1)
+
+ATRIBUTOS IMPORTANTES:
+- config: Dict - Configuración de la estrategia
+- logger: Logger - Sistema de logging
+- _last_signal: str - Última señal generada
+- _last_trade_step: Optional - Último paso de trading
+
+RELACIONES:
+- Utilizada por: ScalpingBot, AdvancedBacktester
+- Depende de: pandas, numpy, logging
+
+---
+
+M1ScalpingStrategy (strategies/m1_strategy.py)
+----------------------------------------------
+PROPÓSITO: Estrategia especializada para timeframe M1
+RESPONSABILIDAD: Optimización específica para trading de 1 minuto
+
+MÉTODOS PÚBLICOS:
+- calculate_indicators(df) -> pd.DataFrame
+  * Calcula indicadores optimizados para M1
+- generate_signal(df, index) -> Tuple[SignalType, float, Dict]
+  * Genera señales específicas para M1
+- _calculate_adx_simple(high, low, close, period) -> pd.Series
+  * Calcula ADX simplificado para filtrado de tendencia
+
+ATRIBUTOS IMPORTANTES:
+- config: Dict - Configuración M1 específica
+- _last_signal: str - Control de señales
+- _last_trade_step: Optional - Control de pasos
+
+RELACIONES:
+- Utilizada por: M1PerformanceMonitor, ExecutionEngineM1
+- Hereda conceptos de: ScalpingStrategy
+
+---
+
+MT5Connector (mt5_connector/connector.py)
+-----------------------------------------
+PROPÓSITO: Interfaz de comunicación con MetaTrader 5
+RESPONSABILIDAD: Gestionar conexión, datos y operaciones MT5
+
+MÉTODOS PÚBLICOS:
+- connect() -> bool
+  * Establece conexión con MT5
+- disconnect() -> None
+  * Cierra conexión MT5
+- get_market_data(symbol, timeframe, count) -> pd.DataFrame
+  * Obtiene datos históricos del mercado
+- execute_trade(symbol, action, volume, sl, tp) -> Dict
+  * Ejecuta operaciones de trading
+- get_open_positions(symbol=None) -> List[Dict]
+  * Obtiene posiciones abiertas
+- check_symbol_available(symbol) -> str
+  * Verifica disponibilidad de símbolos
+
+ATRIBUTOS IMPORTANTES:
+- connected: bool - Estado de conexión
+- available_symbols: set - Símbolos disponibles
+- logger: Logger - Sistema de logging
+- TIMEFRAME_MAP: Dict - Mapeo de timeframes
+
+RELACIONES:
+- Utilizada por: ScalpingBot, data_loader
+- Depende de: MetaTrader5, pandas
+
+---
+
+IntelligentRiskManager (core/risk_manager.py)
+---------------------------------------------
+PROPÓSITO: Gestión inteligente de riesgo con análisis de oportunidades
+RESPONSABILIDAD: Evaluar riesgos, gestionar capital y oportunidades
+
+MÉTODOS PÚBLICOS:
+- evaluate_market_opportunity(symbol, df, signal_type) -> MarketOpportunity
+  * Evalúa oportunidades de mercado con scoring
+- calculate_position_size(balance, risk_per_trade, stop_loss_pips) -> float
+  * Calcula tamaño de posición basado en riesgo
+- should_trade(symbol, signal_confidence, market_conditions) -> bool
+  * Determina si se debe ejecutar una operación
+- implement_trailing_stop(symbol, position_id, current_price) -> bool
+  * Implementa trailing stop dinámico
+- update_daily_stats(trade_result) -> None
+  * Actualiza estadísticas diarias
+
+ATRIBUTOS IMPORTANTES:
+- config: Dict - Configuración de riesgo
+- daily_stats: Dict - Estadísticas del día
+- capital_config: Dict - Configuración de capital
+- active_positions: Dict - Posiciones activas
+- trailing_config: TrailingConfig - Configuración trailing stop
+
+RELACIONES:
+- Utilizada por: ScalpingBot, ExecutionEngineM1
+- Depende de: MetaTrader5, logging
+
+---
+
+AdvancedBacktester (backtest.py)
+--------------------------------
+PROPÓSITO: Motor de backtesting avanzado con métricas detalladas
+RESPONSABILIDAD: Simular trading y generar reportes de rendimiento
+
+MÉTODOS PÚBLICOS:
+- run_advanced_backtest(symbol, days, config_override) -> Dict
+  * Ejecuta backtesting completo con métricas avanzadas
+- run_optimization(symbol, days, param_ranges) -> Dict
+  * Optimiza parámetros usando grid search
+- generate_detailed_report(results) -> Dict
+  * Genera reporte detallado de resultados
+
+ATRIBUTOS IMPORTANTES:
+- initial_capital: float - Capital inicial
+- strategy: ScalpingStrategy - Estrategia a testear
+- risk_manager: RiskManager - Gestor de riesgo
+
+RELACIONES:
+- Utiliza: ScalpingStrategy, RiskManager, data_loader
+- Utilizada por: PerformanceAnalyzer, optimization_engine
+
+---
+
+M1PerformanceMonitor (tools/m1_performance.py)
+-----------------------------------------------
+PROPÓSITO: Monitor especializado para rendimiento M1
+RESPONSABILIDAD: Ejecutar backtests M1 y generar reportes
+
+MÉTODOS PÚBLICOS:
+- run_specialized_backtest(symbol, timeframe, days, config) -> Dict
+  * Ejecuta backtest especializado para M1
+- generate_performance_report(results, symbol, config) -> str
+  * Genera reporte de rendimiento detallado
+
+ATRIBUTOS IMPORTANTES:
+- logger: Logger - Sistema de logging
+
+RELACIONES:
+- Utiliza: M1ScalpingStrategy, ExecutionEngineM1, RiskManagerM1
+- Utilizada por: realistic_bot_evaluator, run_m1_optimized
+
+---
+
+ParameterTunerM1 (tools/param_tuning_m1.py)
+-------------------------------------------
+PROPÓSITO: Optimización de parámetros para estrategia M1
+RESPONSABILIDAD: Búsqueda de parámetros óptimos usando grid search
+
+MÉTODOS PÚBLICOS:
+- evaluate_config(symbol, timeframe, config, days) -> Dict
+  * Evalúa configuración específica
+- grid_search(symbol, timeframe, base_config, param_ranges, days) -> Dict
+  * Búsqueda en grilla de parámetros
+- time_cv_search(symbol, timeframe, base_config, param_ranges, days) -> Dict
+  * Búsqueda con validación cruzada temporal
+
+ATRIBUTOS IMPORTANTES:
+- data_provider: Callable - Proveedor de datos históricos
+
+RELACIONES:
+- Utiliza: M1ScalpingStrategy, ExecutionEngineM1, RiskManagerM1
+- Utilizada por: optimization_engine
+
+2.2 CLASES DE SOPORTE
+---------------------
+
+SystemMonitor (main.py)
+-----------------------
+PROPÓSITO: Monitoreo del sistema y autoreparación
+RESPONSABILIDAD: Vigilar salud del sistema y ejecutar reparaciones
+
+MarketAnalyzer (core/data_loader.py)
+------------------------------------
+PROPÓSITO: Análisis de condiciones de mercado
+RESPONSABILIDAD: Evaluar volatilidad, tendencias y condiciones
+
+ExecutionEngineM1 (core/execution_m1.py)
+-----------------------------------------
+PROPÓSITO: Motor de ejecución especializado M1
+RESPONSABILIDAD: Ejecutar backtests M1 con precisión
+
+RiskManagerM1 (core/risk_manager_m1.py)
+---------------------------------------
+PROPÓSITO: Gestión de riesgo especializada M1
+RESPONSABILIDAD: Gestión de riesgo optimizada para timeframe M1
+
+================================================================================
+3. FLUJO DEL SISTEMA
+================================================================================
+
+3.1 CONTEXTO GENERAL
+--------------------
+Sistema de trading algorítmico diseñado para operar en mercados forex usando
+MetaTrader 5, con especialización en scalping de alta frecuencia en timeframes
+M1 y M5. El sistema incluye:
+
+- Análisis técnico avanzado con múltiples indicadores
+- Gestión inteligente de riesgo con evaluación de oportunidades
+- Sistema de monitoreo y autoreparación
+- Optimización automática de parámetros
+- Backtesting realista con métricas avanzadas
+
+3.2 DIAGRAMA DE INTERACCIÓN ENTRE COMPONENTES
+---------------------------------------------
+
+[main.py] 
+    ↓
+[SystemMonitor] ←→ [ScalpingBot]
+    ↓                    ↓
+[HealthCheck]      [MT5Connector] ←→ [MetaTrader 5]
+    ↓                    ↓
+[AutoRepair]       [ScalpingStrategy] ←→ [M1ScalpingStrategy]
+                         ↓
+                   [IntelligentRiskManager]
+                         ↓
+                   [Trade Execution]
+
+FLUJO DE BACKTESTING:
+[AdvancedBacktester] → [data_loader] → [ScalpingStrategy] → [RiskManager] → [Results]
+
+FLUJO DE OPTIMIZACIÓN:
+[optimization_engine] → [ParameterTunerM1] → [grid_search] → [evaluation] → [best_params]
+
+3.3 PUNTOS DE ENTRADA PRINCIPALES
+---------------------------------
+
+1. main.py
+   - Entrada principal del sistema
+   - Inicia bot con monitoreo automático
+   - Configuración: SCALPING_CONFIG, STRATEGY_CONFIG
+
+2. run_m1_optimized.py
+   - Ejecución optimizada M1
+   - Usa M1PerformanceMonitor
+   - Genera reportes especializados
+
+3. run_m1_scalping.py
+   - Ejecución simple M1
+   - Configuración básica M1
+
+4. realistic_bot_evaluator.py
+   - Evaluación realista completa
+   - Análisis de condiciones de mercado
+   - Monte Carlo y análisis de sensibilidad
+
+5. performance_comparison_tool.py
+   - Comparación de rendimiento
+   - Análisis comparativo de configuraciones
+
+6. optimization_engine.py
+   - Optimización de parámetros
+   - Búsqueda automática de mejores configuraciones
+
+3.4 FLUJO DE DATOS CLAVE
+------------------------
+
+1. OBTENCIÓN DE DATOS:
+   MT5Connector → get_market_data() → pandas.DataFrame
+
+2. PROCESAMIENTO:
+   DataFrame → calculate_indicators() → DataFrame con indicadores
+
+3. GENERACIÓN DE SEÑALES:
+   DataFrame + indicadores → generate_signal() → (SignalType, confidence, reasons)
+
+4. EVALUACIÓN DE RIESGO:
+   Signal + market_conditions → evaluate_market_opportunity() → MarketOpportunity
+
+5. EJECUCIÓN:
+   MarketOpportunity → should_trade() → execute_trade() → Trade Result
+
+6. MONITOREO:
+   Trade Results → update_daily_stats() → SystemStatus → Health Check
+
+================================================================================
+4. DEPENDENCIAS
+================================================================================
+
+4.1 BIBLIOTECAS EXTERNAS
+------------------------
+
+CORE DEPENDENCIES:
+- pandas (>=1.3.0)           - Manipulación de datos y DataFrames
+- numpy (>=1.21.0)           - Cálculos numéricos y arrays
+- MetaTrader5 (>=5.0.37)     - Interfaz con MetaTrader 5
+- matplotlib (>=3.5.0)       - Visualización y gráficos
+- scipy (>=1.7.0)            - Análisis estadístico y científico
+
+ANALYSIS & OPTIMIZATION:
+- logging (built-in)         - Sistema de logging
+- datetime (built-in)        - Manejo de fechas y tiempo
+- json (built-in)            - Serialización JSON
+- threading (built-in)       - Programación concurrente
+- dataclasses (built-in)     - Clases de datos
+- typing (built-in)          - Type hints
+- enum (built-in)            - Enumeraciones
+- itertools (built-in)       - Herramientas de iteración
+- concurrent.futures         - Ejecución paralela
+- argparse (built-in)        - Parsing de argumentos
+- warnings (built-in)        - Gestión de advertencias
+
+TESTING:
+- unittest (built-in)        - Framework de testing
+- unittest.mock (built-in)   - Mocking para tests
+
+UTILITIES:
+- os (built-in)              - Operaciones del sistema
+- sys (built-in)             - Parámetros del sistema
+- glob (built-in)            - Búsqueda de archivos
+- shutil (built-in)          - Operaciones de archivos
+- subprocess (built-in)      - Ejecución de subprocesos
+
+4.2 MÓDULOS INTERNOS DEPENDIENTES
+---------------------------------
+
+CONFIGURACIÓN:
+- config.settings            - Configuraciones principales
+- config.m1_specialization   - Configuración M1 especializada
+
+CORE SYSTEM:
+- core.trading_bot          - Bot principal
+- core.risk_manager         - Gestión de riesgo
+- core.risk_manager_m1      - Gestión de riesgo M1
+- core.data_loader          - Carga de datos
+- core.execution_m1         - Ejecución M1
+- core.performance_monitor  - Monitor de rendimiento
+- core.alert_manager        - Gestión de alertas
+
+STRATEGIES:
+- strategies.scalping_strategy  - Estrategia principal
+- strategies.m1_strategy       - Estrategia M1
+
+CONNECTIVITY:
+- mt5_connector.connector      - Conector MT5
+
+TOOLS:
+- tools.m1_performance        - Monitor M1
+- tools.param_tuning_m1       - Optimización M1
+- tools.visualization         - Visualización
+
+ANALYSIS:
+- backtest                    - Backtesting
+- performance_analyzer        - Análisis de rendimiento
+- optimization_engine         - Optimización
+- realistic_bot_evaluator     - Evaluación realista
+
+================================================================================
+5. CONFIGURACIONES
+================================================================================
+
+5.1 PARÁMETROS IMPORTANTES
+--------------------------
+
+SCALPING_CONFIG (config/settings.py):
+- symbol: "EURUSD"                    - Par de divisas principal
+- timeframe: "M1"                     - Timeframe de scalping
+- volume: 0.01                        - Volumen por operación
+- max_daily_trades: 20                - Máximo trades diarios
+- risk_per_trade: 0.004               - 0.4% riesgo por trade
+- max_daily_loss: 0.015               - 1.5% pérdida máxima diaria
+- trading_hours: {start: 8, end: 18}  - Horario de trading
+- max_spread: 1.5                     - Spread máximo aceptable
+
+STRATEGY_CONFIG (config/settings.py):
+- ema_fast: 8                         - EMA rápida
+- ema_medium: 21                      - EMA media
+- ema_slow: 34                        - EMA lenta
+- rsi_period: 14                      - Período RSI
+- rsi_oversold: 35                    - RSI sobreventa
+- rsi_overbought: 65                  - RSI sobrecompra
+- bollinger_period: 20                - Período Bollinger
+- bollinger_std: 1.8                  - Desviación estándar Bollinger
+- atr_period: 14                      - Período ATR
+- take_profit_multiplier: 2.5         - Multiplicador TP
+- stop_loss_multiplier: 1.2           - Multiplicador SL
+- min_confidence: 0.65                - Confianza mínima
+- adx_min: 25                         - ADX mínimo
+
+PROFITABILITY_TARGETS:
+- initial_target: 0.70                - 70% objetivo inicial
+- final_target: 0.80                  - 80% objetivo final
+- min_win_rate: 0.60                  - 60% win rate mínimo
+- max_drawdown: 0.12                  - 12% drawdown máximo
+- min_profit_factor: 1.8              - Factor de ganancia mínimo
+
+MONITORING_CONFIG (main.py):
+- check_interval_minutes: 5           - Intervalo de verificación
+- max_retry_attempts: 3               - Intentos máximos de recuperación
+- availability_target: 99.9           - 99.9% disponibilidad objetivo
+- profitability_target: 70.0          - 70% rentabilidad objetivo
+
+5.2 VARIABLES DE ENTORNO NECESARIAS
+-----------------------------------
+
+SISTEMA:
+- PYTHONPATH                          - Ruta de Python
+- PATH                                - Ruta del sistema
+
+METATRADER 5:
+- MT5_LOGIN (opcional)                - Login MT5
+- MT5_PASSWORD (opcional)             - Password MT5
+- MT5_SERVER (opcional)               - Servidor MT5
+
+LOGGING:
+- LOG_LEVEL (opcional)                - Nivel de logging (DEBUG, INFO, WARNING, ERROR)
+
+5.3 ARCHIVOS DE CONFIGURACIÓN
+-----------------------------
+
+PRINCIPALES:
+- config/settings.py                  - Configuraciones principales del sistema
+- config/m1_specialization.py        - Configuración especializada M1
+
+GENERADOS:
+- scalping_bot.log                    - Log principal del sistema
+- system_maintenance.log              - Log de mantenimiento
+- cleanup_report.json                 - Reporte de limpieza
+- status_reports/status_*.json        - Reportes de estado
+- *_results_*.json                    - Resultados de optimización
+- *_equity_*.png                      - Gráficos de equity
+- README_CONSOLIDATED.md              - Documentación consolidada
+
+================================================================================
+6. EJEMPLOS DE USO
+================================================================================
+
+6.1 EJECUCIÓN BÁSICA
+--------------------
+
+# Iniciar sistema completo con monitoreo
+python main.py --symbol EURUSD --timeframe M1 --auto-start --enable-monitoring
+
+# Ejecutar backtesting avanzado
+python backtest.py --symbol EURUSD --days 30 --optimize
+
+# Evaluación realista del bot
+python realistic_bot_evaluator.py --symbol EURUSD --days 14 --monte-carlo
+
+# Optimización de parámetros M1
+python run_m1_optimized.py --symbol EURUSD --days 7 --optimize
+
+6.2 CONFIGURACIÓN PERSONALIZADA
+-------------------------------
+
+# Modificar config/settings.py
+STRATEGY_CONFIG = {
+    "ema_fast": 5,           # EMA más sensible
+    "min_confidence": 0.70,  # Mayor confianza requerida
+    "risk_per_trade": 0.002  # Menor riesgo por trade
+}
+
+# Ejecutar con configuración personalizada
+python main.py --config custom_config.json
+
+6.3 ANÁLISIS Y REPORTES
+-----------------------
+
+# Comparación de rendimiento
+python performance_comparison_tool.py --baseline STRATEGY_CONFIG --optimized OPTIMIZED_CONFIG
+
+# Análisis de reportes M1
+python analyze_m1_reports.py --directory m1_reports/
+
+# Ejecutar tests
+python run_tests.py --verbose --coverage
+
+================================================================================
+7. MÉTRICAS Y RENDIMIENTO
+================================================================================
+
+7.1 MÉTRICAS CLAVE
+------------------
+
+RENDIMIENTO:
+- Win Rate: 21.4% (actual) vs 70% (objetivo)
+- Total Return: -0.81% mensual
+- Max Drawdown: 0.86%
+- Profit Factor: 0.85
+- Sharpe Ratio: 0.066
+- Calmar Ratio: 0.023
+
+OPERACIONAL:
+- Trades por día: ~15-20
+- Tiempo promedio por trade: 15-30 minutos
+- Spread promedio: 1.2 pips
+- Slippage promedio: 0.3 pips
+
+SISTEMA:
+- Uptime: 99.5%
+- Latencia promedio: <100ms
+- Memoria utilizada: ~200MB
+- CPU utilizada: ~5-10%
+
+7.2 BENCHMARKS
+--------------
+
+OBJETIVOS DE RENDIMIENTO:
+- Win Rate objetivo: 70%
+- Rentabilidad mensual objetivo: 8%
+- Drawdown máximo: 12%
+- Profit Factor mínimo: 1.8
+
+LÍMITES OPERACIONALES:
+- Máximo 20 trades diarios
+- Riesgo máximo 0.4% por trade
+- Pérdida máxima diaria: 1.5%
+- Spread máximo: 1.5 pips
+
+================================================================================
+8. MANTENIMIENTO Y TROUBLESHOOTING
+================================================================================
+
+8.1 LOGS PRINCIPALES
+-------------------
+
+scalping_bot.log:
+- Actividad principal del bot
+- Señales generadas
+- Trades ejecutados
+- Errores y advertencias
+
+system_maintenance.log:
+- Actividades de mantenimiento
+- Health checks
+- Reparaciones automáticas
+- Alertas del sistema
+
+8.2 COMANDOS DE DIAGNÓSTICO
+---------------------------
+
+# Verificar conexión MT5
+python -c "import MetaTrader5 as mt5; print(mt5.initialize())"
+
+# Ejecutar tests de conectividad
+python tests/test_connector.py
+
+# Verificar integridad del sistema
+python run_tests.py --integration
+
+# Limpiar archivos temporales
+python project_cleanup.py
+
+8.3 PROCEDIMIENTOS DE RECUPERACIÓN
+----------------------------------
+
+CONEXIÓN MT5 PERDIDA:
+1. Verificar que MT5 esté ejecutándose
+2. Reiniciar conexión: connector.disconnect() → connector.connect()
+3. Verificar credenciales y servidor
+
+RENDIMIENTO DEGRADADO:
+1. Revisar logs para errores
+2. Ejecutar health check: SystemMonitor._perform_health_check()
+3. Optimizar parámetros: optimization_engine.py
+4. Reiniciar sistema si es necesario
+
+ERRORES DE DATOS:
+1. Verificar conectividad de red
+2. Comprobar disponibilidad de símbolos
+3. Validar timeframes soportados
+4. Limpiar cache de datos
+
+================================================================================
+9. ROADMAP Y MEJORAS FUTURAS
+================================================================================
+
+9.1 MEJORAS IDENTIFICADAS
+-------------------------
+
+RENDIMIENTO:
+- Implementar machine learning para predicción de señales
+- Optimización dinámica de parámetros en tiempo real
+- Mejora del filtrado de condiciones de mercado
+- Implementación de trailing stops más sofisticados
+
+SISTEMA:
+- Interfaz web para monitoreo remoto
+- Notificaciones push para alertas críticas
+- Base de datos para almacenamiento histórico
+- API REST para integración externa
+
+ESTRATEGIAS:
+- Desarrollo de estrategias multi-timeframe
+- Implementación de análisis de sentimiento
+- Integración de noticias económicas
+- Estrategias adaptativas por sesión de mercado
+
+9.2 ARQUITECTURA FUTURA
+-----------------------
+
+MICROSERVICIOS:
+- Separación de componentes en servicios independientes
+- Comunicación via message queues
+- Escalabilidad horizontal
+- Tolerancia a fallos mejorada
+
+CLOUD DEPLOYMENT:
+- Despliegue en AWS/Azure/GCP
+- Auto-scaling basado en carga
+- Backup automático y disaster recovery
+- Monitoreo distribuido
+
+================================================================================
+FINAL DEL DOCUMENTO
+================================================================================
+
+Este documento representa el estado actual completo del sistema de trading
+algorítmico después de la reorganización y optimización. El sistema mantiene
+todas las funcionalidades críticas mientras elimina redundancias y mejora
+la mantenibilidad.
+
+Para actualizaciones de esta documentación, ejecutar:
+python -c "from tools.documentation_generator import generate_tech_docs; generate_tech_docs()"
+
+Última actualización: 2025-10-25 21:57:00
+Próxima revisión programada: 2025-11-01

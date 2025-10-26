@@ -1,0 +1,1149 @@
+[
+  {
+    "timestamp": "2025-10-24T08:15:20.180484",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9743.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.0013403783333333333,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19387.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19387.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:20:20.809882",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9743.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.08484854444444445,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19387.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19387.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:25:20.832299",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9743.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.16818810472222223,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19387.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19387.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:30:20.853260",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9752.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.2515272605555556,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19405.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19405.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:45:55.053256",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.149722222222222e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:47:46.776618",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.970000000000001e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T08:51:54.963660",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.862777777777778e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:18:34.813786",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.585277777777778e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:21:24.991767",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.4324999999999995e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:23:59.353226",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.709722222222223e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:28:41.027346",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.986666666666667e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:33:16.283216",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 5.8180555555555554e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:34:29.234249",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.432777777777778e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:39:29.260888",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.08334516583333333,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:44:29.284256",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.16668499027777778,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:49:29.306766",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.2500245763888889,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:54:29.329486",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.33336422083333334,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:59:29.354871",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.4167046055555556,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:04:29.377391",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.5000441944444445,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:09:29.400455",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.5833839344444444,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:14:29.424109",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.6667238383333333,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:19:29.446110",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.7500632830555556,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:24:29.468223",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.8334027588888889,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:29:29.492348",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.9167427936111111,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:34:29.515184",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.0000824702777777,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:39:29.537638",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.0834220408333333,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:44:29.561117",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.166761896111111,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:49:29.585258",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.2501019352777778,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:54:29.608821",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.3334418138888888,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:59:29.631284",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.4167813869444443,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:04:29.653450",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.5001208775,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:09:29.675394",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.5834603063888888,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:14:29.698339",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.6668000133333334,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:19:29.721240",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.7501397080555554,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:24:29.743999",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.8334793633333333,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:29:29.766481",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 1.9168189416666668,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:34:29.789324",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.000158620277778,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:39:29.813315",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.083498617777778,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:44:29.836646",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.1668384319444445,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:49:29.862895",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.2501790566666666,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:54:29.888420",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.333519480277778,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T11:59:29.911900",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.4168593358333332,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:04:29.935308",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.500199171388889,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:09:29.959275",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.5835391622222224,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:14:29.981971",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.6668788,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:19:30.005332",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.7502186225,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:24:30.611202",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.8337202530555556,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:29:30.634382",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 2.9170600252777774,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T12:34:30.657080",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 3.000399663611111,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T09:58:15.394712",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.0017440483333333334,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:03:15.444001",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.08509107305555555,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:08:15.509420",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.16844257833333334,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:13:15.571675",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.2517932047222222,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:18:15.595827",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.33513324694444446,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:23:15.619064",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.418473035,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:25:53.928623",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.709722222222223e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:30:53.961837",
+    "mt5_connection": true,
+    "bot_status": "running",
+    "balance": 9652.8,
+    "spread": 0.8000000000008001,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 0.08334726916666667,
+    "error_count": 0,
+    "warning_count": 1,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)",
+      "✅ Sistema funcionando óptimamente",
+      "📈 Todos los indicadores en rangos normales",
+      "🎯 Objetivos de rentabilidad cumplidos"
+    ]
+  },
+  {
+    "timestamp": "2025-10-24T10:44:59.603661",
+    "mt5_connection": true,
+    "bot_status": "stopped",
+    "balance": 9652.8,
+    "spread": 0.7999999999985796,
+    "volatility": 0.0,
+    "last_signal": "HOLD",
+    "uptime_hours": 4.996388888888889e-06,
+    "error_count": 0,
+    "warning_count": 0,
+    "transactions_hour": 0,
+    "profitability": 19205.6,
+    "recommendations": [
+      "🟡 ADVERTENCIA: Condiciones subóptimas detectadas",
+      "   • Trading_Bot: Bot detenido",
+      "✅ RENTABILIDAD: Objetivo superado (19205.6% vs 70.0%)"
+    ]
+  }
+]
